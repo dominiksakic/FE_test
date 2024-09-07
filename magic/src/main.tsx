@@ -5,6 +5,7 @@ import "./index.css";
 import Root from "./routes/root.tsx";
 import Homepage from "./routes/homepage.tsx";
 import { Search } from "./components/Search.tsx";
+import { NewPrompt } from "./components/Create.tsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Root /> },
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "prompts/",
         element: <Search />,
+      },
+      {
+        path: "prompt/",
+        element: <NewPrompt />,
       },
     ],
   },

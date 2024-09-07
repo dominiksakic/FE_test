@@ -14,7 +14,7 @@ const Homepage = () => {
           <Link to={"prompts"}>
             <button className="btn"> Search</button>
           </Link>
-          <Link>
+          <Link to={"prompt"}>
             <button className="btn">Create</button>
           </Link>
         </div>
@@ -27,7 +27,9 @@ const Homepage = () => {
               <li>Why?</li>
               <li>Example</li>
               <li>More Examples</li>
-              <li>もっと見る</li>
+              <li>
+                <Link to={"prompts"}>もっと見る</Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -63,7 +65,7 @@ const Homepage = () => {
       </div>
       <div className="outlet">
         <Outlet />
-        <button onClick={handleLogout}>Logout</button>
+        <button className="logout" onClick={handleLogout}>Logout</button>
       </div>
     </div>
   );
