@@ -199,7 +199,17 @@ html {
 .sidebar {
   border: 1px red solid;
   display: grid;
-  grid-template-rows: 10% 30% 60%;
+  grid-template-rows: 10% 25% 65%;
+}
+
+.sidebar h2 {
+  margin: 4px;
+  font-size: small;
+}
+
+.sidebar li {
+  margin-left: 12px;
+  margin-top: 12px;
 }
 
 .main-button-container {
@@ -226,16 +236,13 @@ html {
   gap: 24px;
 }
 
-.sidebar-chat-container h2 {
-  margin: 4px;
-  font-size: small;
-}
-
-.sidebar-chat-container li {
-  margin-left: 8px;
-  margin-top: 8px;
-}
-
 .outlet {
   border: 1px black solid;
+  position: relative;
+}
+
+.logout-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
