@@ -190,4 +190,16 @@ html {
 }
 
 /* homepage */
+.main-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+}
 
+.sidebar {
+  border: 1px red solid;
+}
+
+.outlet {
+  border: 1px black solid;
+}

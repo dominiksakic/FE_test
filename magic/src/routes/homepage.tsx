@@ -1,5 +1,13 @@
+import { Outlet } from "../layout/outlet";
+import { Sidebar } from "../layout/sidebar";
+
 const Homepage = () => {
-    return <h1>Homepage</h1>
-}
+  return (
+    <div className="main-container">
+      <Sidebar />
+      <Outlet />
+    </div>
+  );
+};
 
 export default Homepage;
