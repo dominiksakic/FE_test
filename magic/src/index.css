@@ -198,6 +198,42 @@ html {
 
 .sidebar {
   border: 1px red solid;
+  display: grid;
+  grid-template-rows: 10% 30% 60%;
+}
+
+.main-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.main-button-container button {
+  width: 80%;
+  padding: 4px;
+}
+
+.sidebar-prompt-container {
+  margin: 2rem;
+}
+
+.sidebar-chat-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-chat-container h2 {
+  margin: 4px;
+  font-size: small;
+}
+
+.sidebar-chat-container li {
+  margin-left: 8px;
+  margin-top: 8px;
 }
 
 .outlet {
