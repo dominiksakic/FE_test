@@ -266,3 +266,34 @@ html {
 .search-input-container button {
   margin: 4px;
 }
+
+/* create */
+.create-container {
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  margin-top: 46px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-input {
+  flex-grow: 1;
+}
+
+.text-area {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
