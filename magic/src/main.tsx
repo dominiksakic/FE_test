@@ -6,6 +6,8 @@ import Root from "./routes/root.tsx";
 import Homepage from "./routes/homepage.tsx";
 import { Search } from "./components/Search.tsx";
 import { NewPrompt } from "./components/Create.tsx";
+import { ChatWindow } from "./components/Chat.tsx";
+import { Template } from "./components/Template.tsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Root /> },
@@ -21,6 +23,8 @@ const router = createBrowserRouter([
         path: "prompt/",
         element: <NewPrompt />,
       },
+      { path: "chat/", element: <ChatWindow /> },
+      { path: "template/:id", element: <Template /> },
     ],
   },
 ]);

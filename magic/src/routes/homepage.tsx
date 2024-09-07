@@ -22,7 +22,9 @@ const Homepage = () => {
           <h2>よく使うプロンプト</h2>
           <nav>
             <ul>
-              <li>Email</li>
+              <li>
+                <Link to={"template/1"}>Email</Link>
+              </li>
               <li>Estimate</li>
               <li>Why?</li>
               <li>Example</li>
@@ -38,7 +40,9 @@ const Homepage = () => {
             <h2>今日のチャット</h2>
             <nav>
               <ul>
-                <li>Email</li>
+                <li>
+                  <Link to={"chat/"}>Email</Link>
+                </li>
                 <li>Estimate</li>
               </ul>
             </nav>
@@ -65,7 +69,9 @@ const Homepage = () => {
       </div>
       <div className="outlet">
         <Outlet />
-        <button className="logout" onClick={handleLogout}>Logout</button>
+        <button className="logout" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );
