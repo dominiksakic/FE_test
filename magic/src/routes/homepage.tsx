@@ -1,4 +1,5 @@
 import { Outlet, useNavigate, Link } from "react-router-dom";
+import { Plus, Search } from "lucide-react";
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -12,14 +13,21 @@ const Homepage = () => {
       <div className="sidebar">
         <div className="main-button-container">
           <Link to={"prompts"}>
-            <button className="search-button"> Search</button>
+            <button className="button-5 search-button">
+              {" "}
+              <Search />
+              Search
+            </button>
           </Link>
           <Link to={"prompt"}>
-            <button className="create-button">Create</button>
+            <button className="button-5 create-button">
+              <Plus />
+              Create
+            </button>
           </Link>
         </div>
         <div className="sidebar-prompt-container">
-          <h2>よく使うプロンプト</h2>
+          <h2>-よく使うプロンプト-</h2>
           <nav>
             <ul>
               <li>
@@ -29,7 +37,7 @@ const Homepage = () => {
               <li>Why?</li>
               <li>Example</li>
               <li>More Examples</li>
-              <li>
+              <li tabIndex={1}>
                 <Link to={"prompts"}>もっと見る</Link>
               </li>
             </ul>
@@ -37,7 +45,7 @@ const Homepage = () => {
         </div>
         <div className="sidebar-chat-container">
           <div className="time-container">
-            <h2>今日のチャット</h2>
+            <h2>-今日のチャット-</h2>
             <nav>
               <ul>
                 <li>
@@ -48,7 +56,7 @@ const Homepage = () => {
             </nav>
           </div>
           <div className="time-container">
-            <h2>昨日のチャット</h2>
+            <h2>-昨日のチャット-</h2>
             <nav>
               <ul>
                 <li>Email</li>
@@ -57,7 +65,7 @@ const Homepage = () => {
             </nav>
           </div>
           <div className="time-container">
-            <h2>今月のチャット</h2>
+            <h2>-今月のチャット-</h2>
             <nav>
               <ul>
                 <li>Email</li>

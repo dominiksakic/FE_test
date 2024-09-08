@@ -213,7 +213,27 @@ h2 {
   background-color: var(--green);
   color: white;
   display: grid;
-  grid-template-rows: 10% 25% 65%;
+  grid-template-rows: 20% 23% 1fr;
+  font-size: 1rem;
+  row-gap: 1rem;
+  overflow: auto;
+}
+
+.sidebar h2 {
+  font-size: 0.75rem;
+  margin-left: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.sidebar li {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-left: 4rem;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .sidebar nav a {
@@ -223,33 +243,18 @@ h2 {
   overflow: hidden;
 
   white-space: pre;
-  padding: 0.5rem;
   border-radius: 8px;
   color: inherit;
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--orange);
+li:hover {
+  background-color: var(--redorange);
+  color: white;
   text-decoration: none;
 }
 
-.sidebar h2 {
-  margin: 4px;
-  font-size: small;
-}
-
-.sidebar li {
-  margin-left: 12px;
-  margin-top: 12px;
-}
-
-.sidebar-prompt-container {
-  margin: 2rem;
-}
-
 .sidebar-chat-container {
-  margin: 2rem;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -435,7 +440,25 @@ a:hover {
 .main-button-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 3rem;
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 3rem;
+}
+
+.search-button,
+.create-button {
+  background-color: white;
+  color: var(--dark);
+}
+
+.search-button:hover,
+.create-button:hover {
+  background-color: var(--redorange);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.search-button:focus,
+.create-button:focus {
+  background-color: var(--redorange);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: white;
 }
