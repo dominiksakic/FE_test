@@ -1,4 +1,4 @@
-import xware from "../assets/xware.png";
+import xware from "../assets/logo2.png";
 
 export const Search = () => {
   return (

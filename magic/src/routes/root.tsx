@@ -1,11 +1,11 @@
 import { Form } from "../components/Form";
-import xwawre from "../assets/xwaresmall.png";
+import logo1 from "../assets/logo1.png";
 
 const Root = () => {
   return (
     <div className="login-screen-container">
       <div className="picture-container">
-        <img src={xwawre} alt="logo of xware" />
+        <img src={logo1} alt="logo of xware" />
       </div>
       <Form className="login-container" />
     </div>
