@@ -12,10 +12,10 @@ const Homepage = () => {
       <div className="sidebar">
         <div className="main-button-container">
           <Link to={"prompts"}>
-            <button className="btn"> Search</button>
+            <button className="search-button"> Search</button>
           </Link>
           <Link to={"prompt"}>
-            <button className="btn">Create</button>
+            <button className="create-button">Create</button>
           </Link>
         </div>
         <div className="sidebar-prompt-container">
@@ -69,7 +69,7 @@ const Homepage = () => {
       </div>
       <div className="outlet">
         <Outlet />
-        <button className="logout" onClick={handleLogout}>
+        <button className="button-5 logout-button" onClick={handleLogout}>
           Logout
         </button>
       </div>
