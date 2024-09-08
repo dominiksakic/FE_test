@@ -3,6 +3,7 @@ import xware from "../assets/xware.png";
 export const Search = () => {
   return (
     <div className="search-container">
+      <div></div>
       <div className="search-input-container">
         <img src={xware} alt="xware logo" />
         <input type="text" />

@@ -268,21 +268,53 @@ li:hover {
 .search-container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 25% 85%;
+  grid-template-rows: 10% 25% 85%;
   justify-items: center;
 }
 
 .search-input-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   max-width: 500px;
+  width: 100%;
+}
+
+.search-input-container img {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  height: auto;
+  align-self: center;
+}
+
+.search-input-container input {
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--dark);
 }
 
 .search-input-container button {
-  margin: 4px;
+  background-color: transparent;
+  color: var(--lightgray);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-family: var(--sans-condensed);
+  font-size: 1rem;
 }
 
+.search-input-container button:hover {
+  color: var(--redorange);
+}
+
+.search-input-container button:focus {
+  color: var(--redorange);
+  border-bottom: 1px solid var(--orange);
+}
 /* create */
 .create-container-0 {
   display: grid;
