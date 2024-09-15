@@ -11,69 +11,91 @@ const Homepage = () => {
   return (
     <div className="main-container">
       <div className="sidebar">
-        <div className="main-button-container">
-          <Link to={"prompts"}>
-            <button className="button-5 search-button">
-              {" "}
-              <Search />
-              Search
-            </button>
-          </Link>
-          <Link to={"prompt"}>
-            <button className="button-5 create-button">
-              <Plus />
-              Create
-            </button>
-          </Link>
-        </div>
-        <div className="sidebar-prompt-container">
-          <h2>-よく使うプロンプト-</h2>
-          <nav>
-            <ul>
-              <li>
-                <Link to={"template/1"}>Email</Link>
-              </li>
-              <li>Estimate</li>
-              <li>Why?</li>
-              <li>Example</li>
-              <li>More Examples</li>
-              <li tabIndex={1}>
-                <Link to={"prompts"}>もっと見る</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className="sidebar-chat-container">
-          <div className="time-container">
-            <h2>-今日のチャット-</h2>
-            <nav>
-              <ul>
-                <li>
-                  <Link to={"chat/"}>Email</Link>
-                </li>
-                <li>Estimate</li>
-              </ul>
-            </nav>
+        <h2>PromptMagic</h2>
+        <Link className="link" to={"prompts"}>
+          <div className="icon-container">
+            <Search className="icon" />
+            <div>Search</div>
           </div>
-          <div className="time-container">
-            <h2>-昨日のチャット-</h2>
-            <nav>
-              <ul>
-                <li>Email</li>
-                <li>Estimate</li>
-              </ul>
-            </nav>
+        </Link>
+        <Link className="link" to={"prompt"}>
+          <div className="icon-container">
+            <Plus className="icon" />
+            <div>Create</div>
           </div>
-          <div className="time-container">
-            <h2>-今月のチャット-</h2>
-            <nav>
-              <ul>
-                <li>Email</li>
-                <li>Estimate</li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+        </Link>
+        <h2>今日</h2>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <h2>昨日</h2>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <h2>先週</h2>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
       </div>
       <div className="outlet">
         <Outlet />
