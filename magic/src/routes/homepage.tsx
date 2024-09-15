@@ -34,7 +34,7 @@ const Homepage = () => {
         <Link className="link" to={"chat/"}>
           <div>Email</div>
         </Link>
-        <h2>昨日</h2>
+        <h2>過去７日間</h2>
         <Link className="link" to={"chat/"}>
           <div>Email</div>
         </Link>
@@ -44,19 +44,7 @@ const Homepage = () => {
         <Link className="link" to={"chat/"}>
           <div>Email</div>
         </Link>
-        <h2>先週</h2>
-        <Link className="link" to={"chat/"}>
-          <div>Email</div>
-        </Link>
-        <Link className="link" to={"chat/"}>
-          <div>Email</div>
-        </Link>
-        <Link className="link" to={"chat/"}>
-          <div>Email</div>
-        </Link>
-        <Link className="link" to={"chat/"}>
-          <div>Email</div>
-        </Link>
+        <h2>過去３０日間</h2>
         <Link className="link" to={"chat/"}>
           <div>Email</div>
         </Link>
@@ -69,6 +57,19 @@ const Homepage = () => {
         <Link className="link" to={"chat/"}>
           <div>Email</div>
         </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <Link className="link" to={"chat/"}>
+          <div>Email</div>
+        </Link>
+        <h2>八月</h2>
         <Link className="link" to={"chat/"}>
           <div>Email</div>
         </Link>
@@ -100,7 +101,7 @@ const Homepage = () => {
       <div className="outlet">
         <Outlet />
         <div className="logout-button">
-          <button className="main-window-botton">Create</button>
+          <button className="button-5">Create</button>
           <button className="main-window-botton" onClick={handleLogout}>
             Logout
           </button>
