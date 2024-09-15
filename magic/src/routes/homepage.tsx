@@ -99,9 +99,12 @@ const Homepage = () => {
       </div>
       <div className="outlet">
         <Outlet />
-        <button className="button-5 logout-button" onClick={handleLogout}>
-          Logout
-        </button>
+        <div className="logout-button">
+          <button className="main-window-botton">Create</button>
+          <button className="main-window-botton" onClick={handleLogout}>
+            Logout
+          </button>
+        </div>
       </div>
     </div>
   );

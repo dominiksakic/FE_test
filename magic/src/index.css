@@ -249,14 +249,9 @@ h2 {
   border-radius: 8px;
 }
 
-.sidebar .link div {
-  padding: 0.2rem;
-}
-.sidebar h2 {
-  padding-top: 1.5rem;
-  font-size: 0.8rem;
-  padding-left: 10px;
-  font-weight: bold;
+.sidebar .link:focus {
+  background-color: var(--sidebar-surface-secondary);
+  border-radius: 8px;
 }
 
 .link .icon-container {
@@ -266,8 +261,18 @@ h2 {
 
 .icon {
   margin-right: 8px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+.sidebar .link div {
+  padding: 0.2rem;
+}
+.sidebar h2 {
+  padding-top: 1.5rem;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  font-weight: bold;
 }
 
 /* Search Component */
@@ -664,20 +669,32 @@ h2 {
 }
 
 .logout-button {
+  display: flex;
+  gap: 1rem;
   position: absolute;
   top: 10px;
-  right: 10px;
-  width: 75px;
-  background-color: var(--green);
+  right: 20px;
+  width: 200px;
 }
 
-.logout-button:hover {
-  background-color: var(--lightgray);
+.main-window-botton {
+  color: var(--text-secondary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background-color: var(--sidebar-surface-secondary);
 }
 
-.main-button-container {
-  display: flex;
-  flex-direction: column;
+.main-window-botton:hover {
+  background-color: var(--sidebar-surface-tertiary);
+}
+
+.main-window-botton:focus {
+  background-color: var(--sidebar-surface-tertiary);
 }
 
 .search-button,
