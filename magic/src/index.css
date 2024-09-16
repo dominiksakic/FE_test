@@ -287,13 +287,18 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 500px;
+  max-width: 800px;
   width: 100%;
 }
 
+.image-container {
+  display: grid;
+  justify-items: center;
+}
+
 .search-input-container img {
-  max-width: 100%;
-  margin-bottom: 0.5rem;
+  max-width: 40%;
+  margin-bottom: 1rem;
   height: auto;
   align-self: center;
 }
@@ -329,7 +334,7 @@ h2 {
 /* create */
 .create-container-0 {
   display: grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 20% 80%;
   padding-left: 20vw;
   padding-right: 20vw;
 }

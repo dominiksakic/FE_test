@@ -5,11 +5,14 @@ export const Search = () => {
     <div className="search-container">
       <div></div>
       <div className="search-input-container">
-        <img src={xware} alt="xware logo" />
-        <input type="text" />
+        <div className="image-container">
+          <img src={xware} alt="xware logo" />
+        </div>
+        <input type="text" placeholder="Search Templates" />
         <div>
-          <button>Chats</button>
-          <button>Templates</button>
+          <button>My Templates</button>
+          <button>All Templates</button>
+          <button>Previous Chats</button>
         </div>
       </div>
       <div className="result-container"></div>
