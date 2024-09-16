@@ -1,8 +1,11 @@
-import { Outlet, useNavigate, Link } from "react-router-dom";
+import { Outlet, useNavigate, Link, useLocation } from "react-router-dom";
 import { Plus, Search } from "lucide-react";
 
 const Homepage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const hideButtonOnRoutes = "/homepage/prompt";
 
   const handleLogout = () => {
     navigate("/");
@@ -101,7 +104,13 @@ const Homepage = () => {
       <div className="outlet">
         <Outlet />
         <div className="logout-button">
-          <button className="button-5">Create</button>
+          <button
+            className={`button-5 ${
+              location.pathname === hideButtonOnRoutes ? "hidden" : ""
+            }`}
+          >
+            Create
+          </button>
           <button className="main-window-botton" onClick={handleLogout}>
             Logout
           </button>

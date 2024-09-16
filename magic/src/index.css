@@ -329,39 +329,25 @@ h2 {
 /* create */
 .create-container-0 {
   display: grid;
-  justify-content: center;
-  height: 100vh;
-}
-
-.create-container {
-  margin-top: 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  background-color: #fff;
-}
-
-.create-container h1 {
-  font-family: var(--sans-condensed);
-  color: var(--dark);
-  margin-bottom: 16px;
+  grid-template-rows: 10% 90%;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  gap: 1rem;
+}
+
+.botton-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .input-row {
   display: flex;
   align-items: center;
-  gap: 12px;
   width: 100%;
 }
 
@@ -369,18 +355,19 @@ h2 {
   flex-grow: 1;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   border: 1px solid var(--lightgray);
-  border-radius: 4px;
+  border-radius: 8px;
   font-family: var(--sans);
   font-size: 1rem;
   color: var(--dark);
 }
 
 .btn {
-  background-color: var(--green);
-  color: #fff;
+  background-color: var(--sidebar-surface-tertiary);
+  color: var(--text-secondary);
   border: none;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  margin-right: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: var(--sans-condensed);
@@ -388,35 +375,20 @@ h2 {
 }
 
 .btn:hover {
-  background-color: var(--orange);
+  background-color: var(--text-tertiary);
 }
-
 .text-area {
   width: 100%;
-  height: 150px;
-  resize: vertical;
-  padding: 10px;
+  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
+  resize: none;
+  padding: 20px;
   border: 1px solid var(--lightgray);
-  border-radius: 4px;
+  border-radius: 8px;
   font-family: var(--sans);
   font-size: 1rem;
   color: var(--dark);
-}
-
-.save-btn {
-  background-color: var(--orange);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: var(--sans-condensed);
-  font-size: 1rem;
-}
-
-.save-btn:hover {
-  background-color: var(--redorange);
 }
 
 /* Chat Window */
@@ -714,4 +686,8 @@ h2 {
   background-color: var(--redorange);
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   color: white;
+}
+
+.hidden {
+  visibility: hidden;
 }
